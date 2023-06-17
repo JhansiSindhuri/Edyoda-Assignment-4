@@ -1,9 +1,10 @@
-# Way with Maps :
-# Python program to triple all numbers of a given list of integers
+# Finding squares of given list :
+# Python program to square the elements of a list using map() function.
 
-nums = (1, 2, 3, 4, 5, 6, 7)
-print("Given list: ", nums)
-result = map(lambda x: x + x + x, nums)
-print("\nTriple of list numbers:")
+def square_num(n):
+  return n * n
+nums = [4, 5, 2, 9]
+print("Given List: ",nums)
+result = map(square_num, nums)
+print("Square of the elements of the list :")
 print(list(result))
-
